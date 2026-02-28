@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Country A",
+        "educationQuality": 8,
+        "livingCosts": 5,
+        "jobOpportunities": 7,
+        "culturalAspects": 9
+    },
+    {
+        "name": "Country B",
+        "educationQuality": 6,
+        "livingCosts": 4,
+        "jobOpportunities": 8,
+        "culturalAspects": 7
+    },
+    {
+        "name": "Country C",
+        "educationQuality": 9,
+        "livingCosts": 6,
+        "jobOpportunities": 5,
+        "culturalAspects": 8
+    },
+    {
+        "name": "Country D",
+        "educationQuality": 7,
+        "livingCosts": 3,
+        "jobOpportunities": 6,
+        "culturalAspects": 9
+    },
+    {
+        "name": "Country E",
+        "educationQuality": 5,
+        "livingCosts": 7,
+        "jobOpportunities": 9,
+        "culturalAspects": 6
+    }
+]

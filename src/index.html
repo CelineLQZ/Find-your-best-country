@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Country Recommender</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Ideal Country</h1>
+    </header>
+    <main>
+        <section id="user-input">
+            <h2>Tell us your preferences</h2>
+            <form id="preference-form">
+                <label for="education">Education Quality:</label>
+                <select id="education" name="education">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                
+                <label for="cost">Living Costs:</label>
+                <select id="cost" name="cost">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                
+                <label for="jobs">Job Opportunities:</label>
+                <select id="jobs" name="jobs">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </section>
+        <section id="recommendations">
+            <h2>Recommended Countries</h2>
+            <div id="country-list"></div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
