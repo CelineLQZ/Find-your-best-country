@@ -1,0 +1,215 @@
+Country Name,Country Code,Score
+Afghanistan,AFG,N/A
+Albania,ALB,72.73
+Algeria,DZA,77.27
+American Samoa,ASM,N/A
+Andorra,AND,N/A
+Angola,AGO,N/A
+Antigua and Barbuda,ATG,N/A
+Argentina,ARG,62.27
+Armenia,ARM,83.64
+Aruba,ABW,N/A
+Australia,AUS,22.73
+Austria,AUT,31.82
+Azerbaijan,AZE,81.82
+Bahrain,BHR,3.64
+Bangladesh,BGD,65
+Barbados,BRB,N/A
+Belarus,BLR,38.18
+Belgium,BEL,5.91
+Belize,BLZ,N/A
+Benin,BEN,N/A
+Bermuda,BMU,N/A
+Bhutan,BTN,N/A
+Bolivia,BOL,45.45
+Bosnia and Herzegovina,BIH,54.55
+Botswana,BWA,N/A
+Brazil,BRA,74.55
+Brunei Darussalam,BRN,N/A
+Bulgaria,BGR,24.55
+Burkina Faso,BFA,N/A
+Burundi,BDI,N/A
+Cabo Verde,CPV,N/A
+Cambodia,KHM,94.55
+Cameroon,CMR,96.36
+Canada,CAN,14.55
+Cayman Islands,CYM,N/A
+Central African Republic,CAF,N/A
+Chad,TCD,N/A
+Channel Islands,CHI,N/A
+Chile,CHL,75.45
+China,CHN,86.36
+Colombia,COL,78.18
+Comoros,COM,N/A
+Costa Rica,CRI,33.18
+Cote d'Ivoire,CIV,N/A
+Croatia,HRV,52.27
+Cuba,CUB,97.27
+Curacao,CUW,N/A
+Cyprus,CYP,21.82
+Czechia,CZE,57.27
+Democratic Republic of Congo,COD,N/A
+Denmark,DNK,5.91
+Djibouti,DJI,N/A
+Dominica,DMA,N/A
+Dominican Republic,DOM,76.36
+Ecuador,ECU,44.55
+Egypt,EGY,84.55
+El Salvador,SLV,87.27
+Equatorial Guinea,GNQ,N/A
+Eritrea,ERI,N/A
+Estonia,EST,35.91
+Eswatini,SWZ,N/A
+Ethiopia,ETH,N/A
+Faroe Islands,FRO,N/A
+Fiji,FJI,N/A
+Finland,FIN,10.91
+France,FRA,26.36
+French Polynesia,PYF,N/A
+Gabon,GAB,N/A
+Georgia,GEO,55.91
+Germany,DEU,18.18
+Ghana,GHA,98.18
+Greece,GRC,48.64
+Greenland,GRL,N/A
+Grenada,GRD,N/A
+Guam,GUM,N/A
+Guatemala,GTM,68.64
+Guinea,GIN,N/A
+Guinea-Bissau,GNB,N/A
+Guyana,GUY,N/A
+Haiti,HTI,N/A
+Honduras,HND,N/A
+"Hong Kong SAR, China",HKG,92.73
+Hungary,HUN,52.27
+Iceland,ISL,17.27
+India,IND,39.09
+Indonesia,IDN,90.91
+Iran,IRN,80
+Iraq,IRQ,33.18
+Ireland,IRL,10
+Isle of Man,IMN,N/A
+Israel,ISR,47.27
+Italy,ITA,23.64
+Jamaica,JAM,N/A
+Japan,JPN,42.27
+Jordan,JOR,14.55
+Kazakhstan,KAZ,28.64
+Kenya,KEN,79.09
+Kiribati,KIR,N/A
+"Korea, Rep.",KOR,90
+Kosovo,XKX,63.64
+Kuwait,KWT,7.73
+Kyrgyz Republic,KGZ,72.73
+Lao PDR,LAO,N/A
+Latvia,LVA,28.64
+Lebanon,LBN,80.91
+Lesotho,LSO,N/A
+Liberia,LBR,N/A
+Libya,LBY,N/A
+Liechtenstein,LIE,N/A
+Lithuania,LTU,40
+Luxembourg,LUX,30
+"Macao SAR, China",MAC,N/A
+Madagascar,MDG,N/A
+Malawi,MWI,N/A
+Malaysia,MYS,27.27
+Maldives,MDV,N/A
+Mali,MLI,N/A
+Malta,MLT,37.27
+Marshall Islands,MHL,N/A
+Mauritania,MRT,N/A
+Mauritius,MUS,85.45
+Mexico,MEX,59.09
+"Micronesia, Fed. Sts.",FSM,N/A
+Moldova,MDA,66.82
+Monaco,MCO,N/A
+Mongolia,MNG,42.27
+Montenegro,MNE,55.91
+Morocco,MAR,60.91
+Mozambique,MOZ,N/A
+Myanmar,MMR,N/A
+Namibia,NAM,N/A
+Nauru,NRU,N/A
+Nepal,NPL,95.45
+Netherlands,NLD,14.55
+New Caledonia,NCL,N/A
+New Zealand,NZL,20
+Nicaragua,NIC,N/A
+Niger,NER,N/A
+Nigeria,NGA,100
+North Macedonia,MKD,46.36
+Northern Mariana Islands,MNP,N/A
+Norway,NOR,20
+Oman,OMN,1.82
+Pakistan,PAK,82.73
+Palau,PLW,N/A
+Panama,PAN,68.64
+Papua New Guinea,PNG,N/A
+Paraguay,PRY,66.82
+Peru,PER,70.91
+Philippines,PHL,93.64
+Poland,POL,34.55
+Portugal,PRT,65
+Puerto Rico (US),PRI,9.09
+Qatar,QAT,4.55
+Republic of Congo,COG,N/A
+Romania,ROU,35.91
+Russian Federation,RUS,62.27
+Rwanda,RWA,N/A
+Samoa,WSM,N/A
+San Marino,SMR,N/A
+Sao Tome and Principe,STP,N/A
+Saudi Arabia,SAU,2.73
+Senegal,SEN,N/A
+Serbia,SRB,70
+Seychelles,SYC,N/A
+Sierra Leone,SLE,N/A
+Singapore,SGP,88.18
+Sint Maarten (Dutch part),SXM,N/A
+Slovak Republic,SVK,50
+Slovenia,SVN,48.64
+Solomon Islands,SLB,N/A
+Somalia,SOM,N/A
+South Africa,ZAF,0
+South Sudan,SSD,N/A
+Spain,ESP,25.45
+Sri Lanka,LKA,99.09
+St. Kitts and Nevis,KNA,N/A
+St. Lucia,LCA,N/A
+St. Martin (French part),MAF,N/A
+St. Vincent and the Grenadines,VCT,N/A
+Sudan,SDN,N/A
+Suriname,SUR,N/A
+Sweden,SWE,16.36
+Switzerland,CHE,42.27
+Syria,SYR,N/A
+Tajikistan,TJK,42.27
+Tanzania,TZA,N/A
+Thailand,THA,89.09
+The Bahamas,BHS,N/A
+The Gambia,GMB,N/A
+Timor-Leste,TLS,N/A
+Togo,TGO,N/A
+Tonga,TON,N/A
+Trinidad and Tobago,TTO,N/A
+Tunisia,TUN,52.27
+Turkiye,TUR,11.82
+Turkmenistan,TKM,N/A
+Turks and Caicos Islands,TCA,N/A
+Tuvalu,TUV,N/A
+Uganda,UGA,N/A
+Ukraine,UKR,52.27
+United Arab Emirates,ARE,12.73
+United Kingdom,GBR,20
+United States,USA,0.91
+Uruguay,URY,59.09
+Uzbekistan,UZB,59.09
+Vanuatu,VUT,N/A
+Venezuela,VEN,72.73
+Viet Nam,VNM,91.82
+Virgin Islands (U.S.),VIR,N/A
+West Bank and Gaza,PSE,7.73
+Yemen,YEM,N/A
+Zambia,ZMB,N/A
+Zimbabwe,ZWE,30.91

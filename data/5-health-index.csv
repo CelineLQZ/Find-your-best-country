@@ -1,0 +1,215 @@
+Country Code,Country Name,Score
+AFG,Afghanistan,N/A
+ALB,Albania,48.1
+DZA,Algeria,54.5
+ASM,American Samoa,N/A
+AND,Andorra,N/A
+AGO,Angola,N/A
+ATG,Antigua and Barbuda,N/A
+ARG,Argentina,67.8
+ARM,Armenia,59.5
+ABW,Aruba,N/A
+AUS,Australia,72.0
+AUT,Austria,78.9
+AZE,Azerbaijan,49.0
+BHR,Bahrain,N/A
+BGD,Bangladesh,42.0
+BRB,Barbados,N/A
+BLR,Belarus,49.6
+BEL,Belgium,76.4
+BLZ,Belize,N/A
+BEN,Benin,N/A
+BMU,Bermuda,N/A
+BTN,Bhutan,N/A
+BOL,Bolivia,N/A
+BIH,Bosnia and Herzegovina,54.6
+BWA,Botswana,N/A
+BRA,Brazil,59.3
+BRN,Brunei Darussalam,N/A
+BGR,Bulgaria,58.3
+BFA,Burkina Faso,N/A
+BDI,Burundi,N/A
+CPV,Cabo Verde,N/A
+KHM,Cambodia,51.6
+CMR,Cameroon,N/A
+CAN,Canada,68.6
+CYM,Cayman Islands,N/A
+CAF,Central African Republic,N/A
+TCD,Chad,N/A
+CHI,Channel Islands,N/A
+CHL,Chile,63.6
+CHN,China,69.2
+COL,Colombia,68.9
+COM,Comoros,N/A
+CRI,Costa Rica,64.8
+CIV,Cote d'Ivoire,N/A
+HRV,Croatia,65.1
+CUB,Cuba,N/A
+CUW,Curacao,N/A
+CYP,Cyprus,56.7
+CZE,Czechia,76.0
+COD,Democratic Republic of Congo,N/A
+DNK,Denmark,77.2
+DJI,Djibouti,N/A
+DMA,Dominica,N/A
+DOM,Dominican Republic,58.4
+ECU,Ecuador,77.7
+EGY,Egypt,47.9
+SLV,El Salvador,N/A
+GNQ,Equatorial Guinea,N/A
+ERI,Eritrea,N/A
+EST,Estonia,75.2
+SWZ,Eswatini,N/A
+ETH,Ethiopia,N/A
+FRO,Faroe Islands,N/A
+FJI,Fiji,N/A
+FIN,Finland,77.6
+FRA,France,77.0
+PYF,French Polynesia,N/A
+GAB,Gabon,N/A
+GEO,Georgia,56.3
+DEU,Germany,72.4
+GHA,Ghana,57.0
+GRC,Greece,58.9
+GRL,Greenland,N/A
+GRD,Grenada,N/A
+GUM,Guam,N/A
+GTM,Guatemala,67.2
+GIN,Guinea,N/A
+GNB,Guinea-Bissau,N/A
+GUY,Guyana,N/A
+HTI,Haiti,N/A
+HND,Honduras,N/A
+HKG,"Hong Kong SAR, China",66.5
+HUN,Hungary,54.2
+ISL,Iceland,69.1
+IND,India,65.5
+IDN,Indonesia,61.2
+IRN,Iran,52.8
+IRQ,Iraq,46.5
+IRL,Ireland,51.2
+IMN,Isle of Man,N/A
+ISR,Israel,73.4
+ITA,Italy,64.9
+JAM,Jamaica,N/A
+JPN,Japan,80.1
+JOR,Jordan,65.6
+KAZ,Kazakhstan,60.7
+KEN,Kenya,62.2
+KIR,Kiribati,N/A
+KOR,"Korea, Rep.",82.9
+XKX,Kosovo,N/A
+KWT,Kuwait,58.6
+KGZ,Kyrgyz Republic,N/A
+LAO,Lao PDR,N/A
+LVA,Latvia,63.6
+LBN,Lebanon,63.7
+LSO,Lesotho,N/A
+LBR,Liberia,N/A
+LBY,Libya,N/A
+LIE,Liechtenstein,N/A
+LTU,Lithuania,75.4
+LUX,Luxembourg,74.2
+MAC,"Macao SAR, China",N/A
+MDG,Madagascar,N/A
+MWI,Malawi,N/A
+MYS,Malaysia,70.7
+MDV,Maldives,N/A
+MLI,Mali,N/A
+MLT,Malta,53.3
+MHL,Marshall Islands,N/A
+MRT,Mauritania,N/A
+MUS,Mauritius,N/A
+MEX,Mexico,72.3
+FSM,"Micronesia, Fed. Sts.",N/A
+MDA,Moldova,52.2
+MCO,Monaco,N/A
+MNG,Mongolia,N/A
+MNE,Montenegro,47.4
+MAR,Morocco,46.8
+MOZ,Mozambique,N/A
+MMR,Myanmar,N/A
+NAM,Namibia,N/A
+NRU,Nauru,N/A
+NPL,Nepal,57.9
+NLD,Netherlands,81.5
+NCL,New Caledonia,N/A
+NZL,New Zealand,68.2
+NIC,Nicaragua,N/A
+NER,Niger,N/A
+NGA,Nigeria,48.3
+MKD,North Macedonia,55.4
+MNP,Northern Mariana Islands,N/A
+NOR,Norway,75.8
+OMN,Oman,63.5
+PAK,Pakistan,59.5
+PLW,Palau,N/A
+PAN,Panama,61.2
+PNG,Papua New Guinea,N/A
+PRY,Paraguay,N/A
+PER,Peru,56.9
+PHL,Philippines,66.8
+POL,Poland,57.9
+PRT,Portugal,72.0
+PRI,Puerto Rico (US),59.1
+QAT,Qatar,73.6
+COG,Republic of Congo,N/A
+ROU,Romania,56.5
+RUS,Russian Federation,61.6
+RWA,Rwanda,N/A
+WSM,Samoa,N/A
+SMR,San Marino,N/A
+STP,Sao Tome and Principe,N/A
+SAU,Saudi Arabia,62.2
+SEN,Senegal,N/A
+SRB,Serbia,52.1
+SYC,Seychelles,N/A
+SLE,Sierra Leone,N/A
+SGP,Singapore,71.9
+SXM,Sint Maarten (Dutch part),N/A
+SVK,Slovak Republic,58.2
+SVN,Slovenia,66.2
+SLB,Solomon Islands,N/A
+SOM,Somalia,N/A
+ZAF,South Africa,64.0
+SSD,South Sudan,N/A
+ESP,Spain,77.2
+LKA,Sri Lanka,70.7
+KNA,St. Kitts and Nevis,N/A
+LCA,St. Lucia,N/A
+MAF,St. Martin (French part),N/A
+VCT,St. Vincent and the Grenadines,N/A
+SDN,Sudan,N/A
+SUR,Suriname,N/A
+SWE,Sweden,68.3
+CHE,Switzerland,71.2
+SYR,Syria,35.4
+TJK,Tajikistan,N/A
+TZA,Tanzania,N/A
+THA,Thailand,77.5
+BHS,The Bahamas,N/A
+GMB,The Gambia,N/A
+TLS,Timor-Leste,N/A
+TGO,Togo,N/A
+TON,Tonga,N/A
+TTO,Trinidad and Tobago,53.6
+TUN,Tunisia,56.6
+TUR,Turkiye,71.3
+TKM,Turkmenistan,N/A
+TCA,Turks and Caicos Islands,N/A
+TUV,Tuvalu,N/A
+UGA,Uganda,N/A
+UKR,Ukraine,55.8
+ARE,United Arab Emirates,70.8
+GBR,United Kingdom,72.7
+USA,United States,67.0
+URY,Uruguay,68.5
+UZB,Uzbekistan,N/A
+VUT,Vanuatu,N/A
+VEN,Venezuela,39.9
+VNM,Viet Nam,62.2
+VIR,Virgin Islands (U.S.),N/A
+PSE,West Bank and Gaza,N/A
+YEM,Yemen,N/A
+ZMB,Zambia,N/A
+ZWE,Zimbabwe,N/A

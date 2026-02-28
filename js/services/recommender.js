@@ -4,12 +4,11 @@ class Recommender {
     }
 
     recommendCountries(preferences) {
-        // Score each country based on user preferences
+        // 基于综合评分 + 用户偏好的简单混合推荐算法
         const rankedCountries = this.countriesData
-            .map((country, index) => ({
+            .map((country) => ({
                 ...country,
-                score: this.calculateScore(country, preferences),
-                rank: index + 1
+                score: this.calculateScore(country, preferences)
             }))
             .filter(country => country.score > 0)
             .sort((a, b) => b.score - a.score)
@@ -22,71 +21,78 @@ class Recommender {
     }
 
     calculateScore(country, preferences) {
-        let score = 0;
-        let matchCount = 0;
+        // 基础分数：使用综合评分（0-10）
+        let baseScore = country.compositeScore || 0;
+        
+        // 偏好调整乘数（0.8 - 1.2）
+        let multiplier = 1.0;
 
-        // Education Quality scoring (0-25 points)
-        if (preferences.educationQuality) {
-            const educationMap = { low: 3, medium: 6, high: 9 };
-            const preferredScore = educationMap[preferences.educationQuality];
-            if (country.educationQuality >= preferredScore) {
-                score += 25;
-                matchCount++;
+        // 生活成本偏好调整
+        if (preferences.livingCosts && country.costLevel) {
+            if (preferences.livingCosts === 'low' && country.costLevel < 5) {
+                multiplier += 0.15; // 便宜国家 +15%
+            } else if (preferences.livingCosts === 'medium' && country.costLevel >= 4 && country.costLevel <= 7) {
+                multiplier += 0.1;  // 中等成本 +10%
+            } else if (preferences.livingCosts === 'high' && country.costLevel > 7) {
+                multiplier += 0.15; // 贵的国家 +15%
             } else {
-                score += Math.max(0, (country.educationQuality / preferredScore) * 25);
+                multiplier -= 0.1;  // 不符合 -10%
             }
         }
 
-        // Living Costs scoring (0-25 points)
-        if (preferences.livingCosts) {
-            const costMap = { low: 3, medium: 5, high: 8 };
-            const preferredCost = costMap[preferences.livingCosts];
-            if (preferences.livingCosts === 'low' && country.livingCosts <= preferredCost) {
-                score += 25;
-                matchCount++;
-            } else if (preferences.livingCosts === 'medium' && country.livingCosts >= 4 && country.livingCosts <= 6) {
-                score += 25;
-                matchCount++;
-            } else if (preferences.livingCosts === 'high' && country.livingCosts >= 6) {
-                score += 25;
-                matchCount++;
-            } else {
-                score += 10;
+        // 生活质量偏好调整
+        if (preferences.educationQuality && country.qualityLevel) {
+            if (preferences.educationQuality === 'high' && country.qualityLevel >= 8) {
+                multiplier += 0.2; // 高质量国家 +20%
+            } else if (preferences.educationQuality === 'medium' && country.qualityLevel >= 6 && country.qualityLevel < 8) {
+                multiplier += 0.1;
+            } else if (preferences.educationQuality === 'low' && country.qualityLevel < 6) {
+                multiplier += 0.05;
             }
         }
 
-        // Job Opportunities scoring (0-25 points)
-        if (preferences.jobOpportunities) {
-            const jobMap = { low: 3, medium: 6, high: 9 };
-            const preferredJob = jobMap[preferences.jobOpportunities];
-            if (country.jobOpportunities >= preferredJob) {
-                score += 25;
-                matchCount++;
-            } else {
-                score += Math.max(0, (country.jobOpportunities / preferredJob) * 25);
+        // 安全偏好调整
+        if (preferences.safety && country.safetyIndex) {
+            if (preferences.safety === 'high' && country.safetyIndex > 70) {
+                multiplier += 0.1;
+            } else if (preferences.safety === 'medium' && country.safetyIndex >= 50 && country.safetyIndex <= 70) {
+                multiplier += 0.05;
             }
         }
 
-        // Cultural Diversity scoring (0-12.5 points)
-        if (preferences.culturalDiversity) {
-            const diversityScore = {
-                high: 9,
-                medium: 6,
-                low: 3
-            };
-            if (country.culturalDiversity >= diversityScore[preferences.culturalDiversity]) {
-                score += 12.5;
-                matchCount++;
+        // 医疗偏好调整
+        if (preferences.healthcare && country.healthcareIndex) {
+            if (preferences.healthcare === 'high' && country.healthcareIndex > 70) {
+                multiplier += 0.1;
+            } else if (preferences.healthcare === 'medium' && country.healthcareIndex >= 50 && country.healthcareIndex <= 70) {
+                multiplier += 0.05;
             }
         }
 
-        // Climate preference scoring (0-12.5 points)
-        if (preferences.climate && country.climate === preferences.climate) {
-            score += 12.5;
-            matchCount++;
+        // 气候偏好调整
+        if (preferences.climate && country.climateIndex) {
+            const climateLevel = country.climateIndex / 10; // 归一化到 0-10
+            if (preferences.climate === 'tropical' && climateLevel > 7) {
+                multiplier += 0.1;
+            } else if (preferences.climate === 'temperate' && climateLevel >= 5 && climateLevel <= 7) {
+                multiplier += 0.1;
+            } else if (preferences.climate === 'cold' && climateLevel < 5) {
+                multiplier += 0.1;
+            }
         }
 
-        return Math.round(score);
+        // 环境偏好调整
+        if (preferences.environment && country.pollutionIndex) {
+            if (preferences.environment === 'clean' && country.pollutionIndex < 50) {
+                multiplier += 0.1;
+            } else if (preferences.environment === 'moderate' && country.pollutionIndex >= 50 && country.pollutionIndex <= 75) {
+                multiplier += 0.05;
+            }
+        }
+
+        // 最终分数 = 基础分 × 乘数，限制在 0-10
+        const finalScore = baseScore * multiplier;
+        return Math.min(10, Math.max(0, finalScore));
     }
 }
 

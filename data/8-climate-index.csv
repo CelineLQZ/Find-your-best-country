@@ -1,0 +1,215 @@
+Country Code,Country Name,Score
+AFG,Afghanistan,75.2
+ALB,Albania,72.2
+DZA,Algeria,100
+ASM,American Samoa,83.1
+AND,Andorra,51.35
+AGO,Angola,100
+ATG,Antigua and Barbuda,84
+ARG,Argentina,91.5
+ARM,Armenia,49.1
+ABW,Aruba,74.15
+AUS,Australia,100
+AUT,Austria,47.2
+AZE,Azerbaijan,74.8
+BHR,Bahrain,81.55
+BGD,Bangladesh,91.45
+BRB,Barbados,86.95
+BLR,Belarus,47.25
+BEL,Belgium,63.35
+BLZ,Belize,91.5
+BEN,Benin,79.9
+BMU,Bermuda,100
+BTN,Bhutan,61.9
+BOL,Bolivia,100
+BIH,Bosnia and Herzegovina,61.75
+BWA,Botswana,100
+BRA,Brazil,92.8
+BRN,Brunei Darussalam,85.25
+BGR,Bulgaria,66.75
+BFA,Burkina Faso,68
+BDI,Burundi,100
+CPV,Cabo Verde,100
+KHM,Cambodia,82.95
+CMR,Cameroon,96
+CAN,Canada,30.15
+CYM,Cayman Islands,80.9
+CAF,Central African Republic,92.65
+TCD,Chad,81.85
+CHI,Channel Islands,N/A
+CHL,Chile,56.95
+CHN,China,47.95
+COL,Colombia,95
+COM,Comoros,100
+CRI,Costa Rica,95.85
+CIV,Cote d'Ivoire,86
+HRV,Croatia,69.8
+CUB,Cuba,90.95
+CUW,Curacao,78
+CYP,Cyprus,100
+CZE,Czechia,53
+COD,Democratic Republic of Congo,N/A
+DNK,Denmark,54.5
+DJI,Djibouti,77.55
+DMA,Dominica,85.85
+DOM,Dominican Republic,97.25
+ECU,Ecuador,100
+EGY,Egypt,100
+SLV,El Salvador,93.85
+GNQ,Equatorial Guinea,96.7
+ERI,Eritrea,86.85
+EST,Estonia,41.7
+SWZ,Eswatini,100
+ETH,Ethiopia,100
+FRO,Faroe Islands,43
+FJI,Fiji,96.6
+FIN,Finland,22.3
+FRA,France,68.25
+PYF,French Polynesia,98.5
+GAB,Gabon,94
+GEO,Georgia,55.05
+DEU,Germany,57.95
+GHA,Ghana,81.7
+GRC,Greece,75.85
+GRL,Greenland,100
+GRD,Grenada,87.55
+GUM,Guam,80.95
+GTM,Guatemala,100
+GIN,Guinea,90.7
+GNB,Guinea-Bissau,80.1
+GUY,Guyana,89.4
+HTI,Haiti,95.25
+HND,Honduras,96.4
+HKG,"Hong Kong SAR, China",N/A
+HUN,Hungary,67.5
+ISL,Iceland,19.25
+IND,India,95.3
+IDN,Indonesia,90.2
+IRN,Iran,100
+IRQ,Iraq,100
+IRL,Ireland,58.65
+IMN,Isle of Man,58.25
+ISR,Israel,100
+ITA,Italy,75.1
+JAM,Jamaica,90.45
+JPN,Japan,68.9
+JOR,Jordan,100
+KAZ,Kazakhstan,45.55
+KEN,Kenya,94.6
+KIR,Kiribati,81.15
+KOR,"Korea, Rep.",71.1
+XKX,Kosovo,60.1
+KWT,Kuwait,88.45
+KGZ,Kyrgyz Republic,23.25
+LAO,Lao PDR,99.2
+LVA,Latvia,44.35
+LBN,Lebanon,87.25
+LSO,Lesotho,71.9
+LBR,Liberia,92.75
+LBY,Libya,100
+LIE,Liechtenstein,47.75
+LTU,Lithuania,46.9
+LUX,Luxembourg,60.1
+MAC,"Macao SAR, China",N/A
+MDG,Madagascar,100
+MWI,Malawi,100
+MYS,Malaysia,88.1
+MDV,Maldives,79.45
+MLI,Mali,73.95
+MLT,Malta,100
+MHL,Marshall Islands,79.95
+MRT,Mauritania,75.9
+MUS,Mauritius,100
+MEX,Mexico,100
+FSM,"Micronesia, Fed. Sts.",N/A
+MDA,Moldova,64.45
+MCO,Monaco,75.25
+MNG,Mongolia,15.35
+MNE,Montenegro,59.65
+MAR,Morocco,100
+MOZ,Mozambique,97.95
+MMR,Myanmar,100
+NAM,Namibia,100
+NRU,Nauru,80.85
+NPL,Nepal,N/A
+NLD,Netherlands,62.45
+NCL,New Caledonia,100
+NZL,New Zealand,62.3
+NIC,Nicaragua,90.6
+NER,Niger,79.8
+NGA,Nigeria,83.5
+MKD,North Macedonia,63.95
+MNP,Northern Mariana Islands,82
+NOR,Norway,21.05
+OMN,Oman,81.8
+PAK,Pakistan,100
+PLW,Palau,80.5
+PAN,Panama,92
+PNG,Papua New Guinea,96.3
+PRY,Paraguay,100
+PER,Peru,100
+PHL,Philippines,100
+POL,Poland,53.9
+PRT,Portugal,89.25
+PRI,Puerto Rico (US),94.8
+QAT,Qatar,79.9
+COG,Republic of Congo,96.3
+ROU,Romania,60.9
+RUS,Russian Federation,28.95
+RWA,Rwanda,100
+WSM,Samoa,82.1
+SMR,San Marino,74.15
+STP,Sao Tome and Principe,97.55
+SAU,Saudi Arabia,90.3
+SEN,Senegal,75.5
+SRB,Serbia,67
+SYC,Seychelles,84.55
+SLE,Sierra Leone,87.3
+SGP,Singapore,81.6
+SXM,Sint Maarten (Dutch part),81.45
+SVK,Slovak Republic,54.15
+SVN,Slovenia,59.3
+SLB,Solomon Islands,90.4
+SOM,Somalia,85.25
+ZAF,South Africa,100
+SSD,South Sudan,80.15
+ESP,Spain,75.35
+LKA,Sri Lanka,83.75
+KNA,St. Kitts and Nevis,82.65
+LCA,St. Lucia,85
+MAF,St. Martin (French part),N/A
+VCT,St. Vincent and the Grenadines,89.15
+SDN,Sudan,80.25
+SUR,Suriname,87.1
+SWE,Sweden,26.15
+CHE,Switzerland,42.35
+SYR,Syria,100
+TJK,Tajikistan,29.25
+TZA,Tanzania,100
+THA,Thailand,85.75
+BHS,The Bahamas,92.1
+GMB,The Gambia,78.1
+TLS,Timor-Leste,97.15
+TGO,Togo,83.35
+TON,Tonga,94.95
+TTO,Trinidad and Tobago,87.25
+TUN,Tunisia,100
+TUR,Turkiye,68.3
+TKM,Turkmenistan,93.3
+TCA,Turks and Caicos Islands,88.55
+TUV,Tuvalu,76.9
+UGA,Uganda,100
+UKR,Ukraine,56.35
+ARE,United Arab Emirates,79.15
+GBR,United Kingdom,56.2
+USA,United States,57.3
+URY,Uruguay,99.85
+UZB,Uzbekistan,75.3
+VUT,Vanuatu,97.8
+VEN,Venezuela,91.45
+VNM,Viet Nam,96.05
+VIR,Virgin Islands (U.S.),N/A
+PSE,West Bank and Gaza,100
+YEM,Yemen,92.3
+ZMB,Zambia,100
+ZWE,Zimbabwe,100

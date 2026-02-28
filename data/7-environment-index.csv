@@ -1,0 +1,215 @@
+Country Code,Country Name,Score
+AFG,Afghanistan,31.0
+ALB,Albania,52.2
+DZA,Algeria,41.7
+ASM,American Samoa,N/A
+AND,Andorra,N/A
+AGO,Angola,40.1
+ATG,Antigua and Barbuda,55.6
+ARG,Argentina,47.0
+ARM,Armenia,44.9
+ABW,Aruba,N/A
+AUS,Australia,63.1
+AUT,Austria,68.9
+AZE,Azerbaijan,40.5
+BHR,Bahrain,35.3
+BGD,Bangladesh,28.1
+BRB,Barbados,53.1
+BLR,Belarus,58.2
+BEL,Belgium,66.8
+BLZ,Belize,47.4
+BEN,Benin,37.8
+BMU,Bermuda,N/A
+BTN,Bhutan,43.3
+BOL,Bolivia,45.3
+BIH,Bosnia and Herzegovina,46.0
+BWA,Botswana,49.2
+BRA,Brazil,53.0
+BRN,Brunei Darussalam,48.3
+BGR,Bulgaria,56.2
+BFA,Burkina Faso,42.2
+BDI,Burundi,33.5
+CPV,Cabo Verde,38.0
+KHM,Cambodia,31.2
+CMR,Cameroon,38.6
+CAN,Canada,61.1
+CYM,Cayman Islands,N/A
+CAF,Central African Republic,39.0
+TCD,Chad,35.9
+CHI,Channel Islands,N/A
+CHL,Chile,49.6
+CHN,China,35.4
+COL,Colombia,49.7
+COM,Comoros,38.2
+CRI,Costa Rica,55.5
+CIV,Cote d'Ivoire,42.9
+HRV,Croatia,62.3
+CUB,Cuba,52.5
+CUW,Curacao,N/A
+CYP,Cyprus,53.9
+CZE,Czechia,65.5
+COD,Democratic Republic of Congo,39.5
+DNK,Denmark,67.7
+DJI,Djibouti,32.3
+DMA,Dominica,49.3
+DOM,Dominican Republic,47.7
+ECU,Ecuador,51.3
+EGY,Egypt,43.7
+SLV,El Salvador,41.6
+GNQ,Equatorial Guinea,41.7
+ERI,Eritrea,29.0
+EST,Estonia,75.7
+SWZ,Eswatini,38.7
+ETH,Ethiopia,36.3
+FRO,Faroe Islands,N/A
+FJI,Fiji,46.0
+FIN,Finland,73.8
+FRA,France,67.0
+PYF,French Polynesia,N/A
+GAB,Gabon,53.3
+GEO,Georgia,47.3
+DEU,Germany,74.5
+GHA,Ghana,36.9
+GRC,Greece,67.3
+GRL,Greenland,N/A
+GRD,Grenada,45.8
+GUM,Guam,N/A
+GTM,Guatemala,32.5
+GIN,Guinea,36.5
+GNB,Guinea-Bissau,N/A
+GUY,Guyana,49.0
+HTI,Haiti,36.4
+HND,Honduras,40.2
+HKG,"Hong Kong SAR, China",N/A
+HUN,Hungary,59.8
+ISL,Iceland,64.3
+IND,India,27.6
+IDN,Indonesia,33.6
+IRN,Iran,41.8
+IRQ,Iraq,30.3
+IRL,Ireland,65.8
+IMN,Isle of Man,N/A
+ISR,Israel,48.0
+ITA,Italy,60.3
+JAM,Jamaica,48.5
+JPN,Japan,61.4
+JOR,Jordan,47.3
+KAZ,Kazakhstan,47.8
+KEN,Kenya,36.9
+KIR,Kiribati,44.3
+KOR,"Korea, Rep.",50.6
+XKX,Kosovo,N/A
+KWT,Kuwait,44.4
+KGZ,Kyrgyz Republic,42.8
+LAO,Lao PDR,26.3
+LVA,Latvia,60.2
+LBN,Lebanon,39.9
+LSO,Lesotho,36.9
+LBR,Liberia,34.3
+LBY,Libya,N/A
+LIE,Liechtenstein,N/A
+LTU,Lithuania,64.1
+LUX,Luxembourg,75.1
+MAC,"Macao SAR, China",N/A
+MDG,Madagascar,30.1
+MWI,Malawi,35.1
+MYS,Malaysia,41.0
+MDV,Maldives,38.1
+MLI,Mali,34.5
+MLT,Malta,66.9
+MHL,Marshall Islands,42.5
+MRT,Mauritania,34.6
+MUS,Mauritius,47.3
+MEX,Mexico,44.2
+FSM,"Micronesia, Fed. Sts.",40.8
+MDA,Moldova,46.1
+MCO,Monaco,N/A
+MNG,Mongolia,37.2
+MNE,Montenegro,47.7
+MAR,Morocco,39.5
+MOZ,Mozambique,39.0
+MMR,Myanmar,27.1
+NAM,Namibia,44.0
+NRU,Nauru,N/A
+NPL,Nepal,33.1
+NLD,Netherlands,66.9
+NCL,New Caledonia,N/A
+NZL,New Zealand,57.3
+NIC,Nicaragua,47.4
+NER,Niger,40.0
+NGA,Nigeria,37.9
+MKD,North Macedonia,50.3
+MNP,Northern Mariana Islands,N/A
+NOR,Norway,69.9
+OMN,Oman,51.3
+PAK,Pakistan,25.5
+PLW,Palau,N/A
+PAN,Panama,52.9
+PNG,Papua New Guinea,36.9
+PRY,Paraguay,39.5
+PER,Peru,46.5
+PHL,Philippines,32.1
+POL,Poland,64.2
+PRT,Portugal,61.9
+PRI,Puerto Rico (US),N/A
+QAT,Qatar,46.8
+COG,Republic of Congo,41.6
+ROU,Romania,57.3
+RUS,Russian Federation,N/A
+RWA,Rwanda,33.9
+WSM,Samoa,47.1
+SMR,San Marino,N/A
+STP,Sao Tome and Principe,36.2
+SAU,Saudi Arabia,42.5
+SEN,Senegal,43.8
+SRB,Serbia,49.8
+SYC,Seychelles,47.9
+SLE,Sierra Leone,39.9
+SGP,Singapore,53.0
+SXM,Sint Maarten (Dutch part),N/A
+SVK,Slovak Republic,65.1
+SVN,Slovenia,62.4
+SLB,Solomon Islands,42.2
+SOM,Somalia,N/A
+ZAF,South Africa,42.7
+SSD,South Sudan,N/A
+ESP,Spain,64.0
+LKA,Sri Lanka,38.8
+KNA,St. Kitts and Nevis,N/A
+LCA,St. Lucia,51.1
+MAF,St. Martin (French part),N/A
+VCT,St. Vincent and the Grenadines,54.2
+SDN,Sudan,39.1
+SUR,Suriname,56.9
+SWE,Sweden,70.3
+CHE,Switzerland,67.8
+SYR,Syria,N/A
+TJK,Tajikistan,32.3
+TZA,Tanzania,43.6
+THA,Thailand,45.7
+BHS,The Bahamas,55.9
+GMB,The Gambia,37.6
+TLS,Timor-Leste,49.9
+TGO,Togo,35.7
+TON,Tonga,40.4
+TTO,Trinidad and Tobago,52.5
+TUN,Tunisia,45.3
+TUR,Turkiye,37.2
+TKM,Turkmenistan,40.6
+TCA,Turks and Caicos Islands,N/A
+TUV,Tuvalu,N/A
+UGA,Uganda,35.8
+UKR,Ukraine,54.6
+ARE,United Arab Emirates,51.6
+GBR,United Kingdom,72.6
+USA,United States,57.2
+URY,Uruguay,44.1
+UZB,Uzbekistan,42.6
+VUT,Vanuatu,45.0
+VEN,Venezuela,53.3
+VNM,Viet Nam,24.6
+VIR,Virgin Islands (U.S.),N/A
+PSE,West Bank and Gaza,N/A
+YEM,Yemen,N/A
+ZMB,Zambia,N/A
+ZWE,Zimbabwe,51.6
