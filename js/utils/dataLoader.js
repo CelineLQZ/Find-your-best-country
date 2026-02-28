@@ -1,6 +1,6 @@
 export async function loadCountries() {
     try {
-        const response = await fetch('./data/countries.json');
+        const response = await fetch('./countries.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
