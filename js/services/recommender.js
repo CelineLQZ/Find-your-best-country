@@ -4,11 +4,15 @@ class Recommender {
     }
 
     recommendCountries(preferences) {
-        // 基于综合评分 + 用户偏好的简单混合推荐算法
+        // Map quiz answers to preference keys
+        const mappedPreferences = this.mapQuizAnswers(preferences);
+        
+        // Score each country based on user preferences
         const rankedCountries = this.countriesData
             .map((country) => ({
                 ...country,
-                score: this.calculateScore(country, preferences)
+                score: this.calculateScore(country, mappedPreferences),
+                matchDetails: this.getMatchDetails(country, mappedPreferences)
             }))
             .filter(country => country.score > 0)
             .sort((a, b) => b.score - a.score)
@@ -20,79 +24,169 @@ class Recommender {
         return rankedCountries;
     }
 
+    mapQuizAnswers(quizAnswers) {
+        // Map quiz question IDs to preference keys
+        return {
+            education: quizAnswers[1],           // Question 1
+            livingCosts: quizAnswers[2],         // Question 2
+            jobOpportunities: quizAnswers[3],    // Question 3
+            safety: quizAnswers[4],              // Question 4
+            healthcare: quizAnswers[5],          // Question 5
+            climate: quizAnswers[6]              // Question 6
+        };
+    }
+
     calculateScore(country, preferences) {
-        // 基础分数：使用综合评分（0-10）
-        let baseScore = country.compositeScore || 0;
-        
-        // 偏好调整乘数（0.8 - 1.2）
-        let multiplier = 1.0;
+        let totalScore = 0;
+        let maxScore = 0;
 
-        // 生活成本偏好调整
-        if (preferences.livingCosts && country.costLevel) {
-            if (preferences.livingCosts === 'low' && country.costLevel < 5) {
-                multiplier += 0.15; // 便宜国家 +15%
-            } else if (preferences.livingCosts === 'medium' && country.costLevel >= 4 && country.costLevel <= 7) {
-                multiplier += 0.1;  // 中等成本 +10%
-            } else if (preferences.livingCosts === 'high' && country.costLevel > 7) {
-                multiplier += 0.15; // 贵的国家 +15%
-            } else {
-                multiplier -= 0.1;  // 不符合 -10%
-            }
+        // 1. Education quality (25%)
+        if (preferences.education) {
+            const educationScore = this.getMatchScore(country.education_level, preferences.education);
+            totalScore += educationScore * 0.25;
+            maxScore += 0.25;
         }
 
-        // 生活质量偏好调整
-        if (preferences.educationQuality && country.qualityLevel) {
-            if (preferences.educationQuality === 'high' && country.qualityLevel >= 8) {
-                multiplier += 0.2; // 高质量国家 +20%
-            } else if (preferences.educationQuality === 'medium' && country.qualityLevel >= 6 && country.qualityLevel < 8) {
-                multiplier += 0.1;
-            } else if (preferences.educationQuality === 'low' && country.qualityLevel < 6) {
-                multiplier += 0.05;
-            }
+        // 2. Living costs (25%) - inverted (lower cost = better match)
+        if (preferences.livingCosts) {
+            const costScore = this.getCostMatchScore(country.cost_level, preferences.livingCosts);
+            totalScore += costScore * 0.25;
+            maxScore += 0.25;
         }
 
-        // 安全偏好调整
-        if (preferences.safety && country.safetyIndex) {
-            if (preferences.safety === 'high' && country.safetyIndex > 70) {
-                multiplier += 0.1;
-            } else if (preferences.safety === 'medium' && country.safetyIndex >= 50 && country.safetyIndex <= 70) {
-                multiplier += 0.05;
-            }
+        // 3. Job opportunities (20%)
+        if (preferences.jobOpportunities) {
+            const jobScore = this.getMatchScore(country.economic_opportunity_level, preferences.jobOpportunities);
+            totalScore += jobScore * 0.20;
+            maxScore += 0.20;
         }
 
-        // 医疗偏好调整
-        if (preferences.healthcare && country.healthcareIndex) {
-            if (preferences.healthcare === 'high' && country.healthcareIndex > 70) {
-                multiplier += 0.1;
-            } else if (preferences.healthcare === 'medium' && country.healthcareIndex >= 50 && country.healthcareIndex <= 70) {
-                multiplier += 0.05;
-            }
+        // 4. Safety (15%)
+        if (preferences.safety) {
+            const safetyScore = this.getMatchScore(country.safety_level, preferences.safety);
+            totalScore += safetyScore * 0.15;
+            maxScore += 0.15;
         }
 
-        // 气候偏好调整
-        if (preferences.climate && country.climateIndex) {
-            const climateLevel = country.climateIndex / 10; // 归一化到 0-10
-            if (preferences.climate === 'tropical' && climateLevel > 7) {
-                multiplier += 0.1;
-            } else if (preferences.climate === 'temperate' && climateLevel >= 5 && climateLevel <= 7) {
-                multiplier += 0.1;
-            } else if (preferences.climate === 'cold' && climateLevel < 5) {
-                multiplier += 0.1;
-            }
+        // 5. Healthcare (10%)
+        if (preferences.healthcare) {
+            const healthScore = this.getMatchScore(country.healthcare_level, preferences.healthcare);
+            totalScore += healthScore * 0.10;
+            maxScore += 0.10;
         }
 
-        // 环境偏好调整
-        if (preferences.environment && country.pollutionIndex) {
-            if (preferences.environment === 'clean' && country.pollutionIndex < 50) {
-                multiplier += 0.1;
-            } else if (preferences.environment === 'moderate' && country.pollutionIndex >= 50 && country.pollutionIndex <= 75) {
-                multiplier += 0.05;
-            }
+        // 6. Climate (5%)
+        if (preferences.climate) {
+            const climateScore = this.getClimateMatchScore(country.climate_preference, preferences.climate);
+            totalScore += climateScore * 0.05;
+            maxScore += 0.05;
         }
 
-        // 最终分数 = 基础分 × 乘数，限制在 0-10
-        const finalScore = baseScore * multiplier;
-        return Math.min(10, Math.max(0, finalScore));
+        // Normalize to 0-10 scale
+        return maxScore > 0 ? (totalScore / maxScore) * 10 : 0;
+    }
+
+    getMatchScore(countryLevel, preferenceLevel) {
+        /**
+         * Match scoring for high/medium/low levels
+         * Perfect match: 10 points
+         * One level difference: 6 points
+         * Two level difference: 2 points
+         */
+        if (!countryLevel || !preferenceLevel) {
+            return 5; // Neutral if data missing
+        }
+
+        if (countryLevel === preferenceLevel) {
+            return 10; // Perfect match
+        }
+
+        // One level difference
+        if ((countryLevel === 'high' && preferenceLevel === 'medium') ||
+            (countryLevel === 'medium' && preferenceLevel === 'high') ||
+            (countryLevel === 'medium' && preferenceLevel === 'low') ||
+            (countryLevel === 'low' && preferenceLevel === 'medium')) {
+            return 6;
+        }
+
+        // Two level difference
+        return 2;
+    }
+
+    getCostMatchScore(costLevel, preferenceLevel) {
+        /**
+         * Special handling for cost preference
+         * Lower cost preference wants lower cost level
+         */
+        if (!costLevel || !preferenceLevel) {
+            return 5;
+        }
+
+        // If prefer low cost, lower numbers are better
+        if (preferenceLevel === 'low') {
+            if (costLevel <= 4) return 10;
+            if (costLevel <= 6) return 6;
+            return 2;
+        }
+
+        // If prefer medium cost, middle numbers are better
+        if (preferenceLevel === 'medium') {
+            if (costLevel >= 4 && costLevel <= 7) return 10;
+            if (costLevel >= 2 && costLevel <= 9) return 6;
+            return 2;
+        }
+
+        // If prefer high cost, higher numbers are better
+        if (preferenceLevel === 'high') {
+            if (costLevel >= 7) return 10;
+            if (costLevel >= 5) return 6;
+            return 2;
+        }
+
+        return 5;
+    }
+
+    getClimateMatchScore(countryClimate, preferenceClimate) {
+        /**
+         * Exact match for climate preference
+         */
+        if (!countryClimate || !preferenceClimate) {
+            return 5;
+        }
+
+        return countryClimate === preferenceClimate ? 10 : 3;
+    }
+
+    getMatchDetails(country, preferences) {
+        /**
+         * Return matching details for UI display
+         */
+        return {
+            education: {
+                country: country.education_level,
+                match: this.getMatchScore(country.education_level, preferences.education)
+            },
+            livingCosts: {
+                country: country.cost_level,
+                match: this.getCostMatchScore(country.cost_level, preferences.livingCosts)
+            },
+            jobOpportunities: {
+                country: country.economic_opportunity_level,
+                match: this.getMatchScore(country.economic_opportunity_level, preferences.jobOpportunities)
+            },
+            safety: {
+                country: country.safety_level,
+                match: this.getMatchScore(country.safety_level, preferences.safety)
+            },
+            healthcare: {
+                country: country.healthcare_level,
+                match: this.getMatchScore(country.healthcare_level, preferences.healthcare)
+            },
+            climate: {
+                country: country.climate_preference,
+                match: this.getClimateMatchScore(country.climate_preference, preferences.climate)
+            }
+        };
     }
 }
 

@@ -1,4 +1,4 @@
-// Quiz questions configuration
+// Quiz questions configuration - aligned with dataset metrics
 export const quizQuestions = [
     {
         id: 1,
@@ -17,7 +17,7 @@ export const quizQuestions = [
         options: [
             { value: "low", label: "Low - Budget-friendly living" },
             { value: "medium", label: "Medium - Comfortable living" },
-            { value: "high", label: "High - Luxury living" }
+            { value: "high", label: "High - Higher cost of living" }
         ]
     },
     {
@@ -25,39 +25,39 @@ export const quizQuestions = [
         question: "How important are job opportunities for you?",
         type: "single",
         options: [
-            { value: "high", label: "Very important - Strong job market" },
-            { value: "medium", label: "Somewhat important - Decent opportunities" },
-            { value: "low", label: "Not important - Retiring or self-employed" }
+            { value: "high", label: "High - Strong job market needed" },
+            { value: "medium", label: "Medium - Decent opportunities" },
+            { value: "low", label: "Low - Not a major priority" }
         ]
     },
     {
         id: 4,
+        question: "How important is safety and security?",
+        type: "single",
+        options: [
+            { value: "high", label: "High - Very safe environment" },
+            { value: "medium", label: "Medium - Reasonably safe" },
+            { value: "low", label: "Low - Not a major concern" }
+        ]
+    },
+    {
+        id: 5,
+        question: "How important is healthcare quality?",
+        type: "single",
+        options: [
+            { value: "high", label: "High - Excellent healthcare system" },
+            { value: "medium", label: "Medium - Adequate healthcare" },
+            { value: "low", label: "Low - Not a major priority" }
+        ]
+    },
+    {
+        id: 6,
         question: "What type of climate do you prefer?",
         type: "single",
         options: [
             { value: "tropical", label: "Tropical - Warm and humid" },
             { value: "temperate", label: "Temperate - Mild seasons" },
             { value: "cold", label: "Cold - Cold winters" }
-        ]
-    },
-    {
-        id: 5,
-        question: "How important is cultural diversity to you?",
-        type: "single",
-        options: [
-            { value: "high", label: "Very important - Multicultural environment" },
-            { value: "medium", label: "Somewhat important - Some diversity" },
-            { value: "low", label: "Not important - Homogeneous culture" }
-        ]
-    },
-    {
-        id: 6,
-        question: "What is your ideal population size?",
-        type: "single",
-        options: [
-            { value: "small", label: "Small - Less than 5 million" },
-            { value: "medium", label: "Medium - 5-50 million" },
-            { value: "large", label: "Large - Over 50 million" }
         ]
     }
 ];
