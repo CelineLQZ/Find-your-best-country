@@ -1,4 +1,4 @@
-export const loadCountryData = async () => {
+export async function loadCountries() {
     try {
         const response = await fetch('./data/countries.json');
         if (!response.ok) {
@@ -8,6 +8,6 @@ export const loadCountryData = async () => {
         return data;
     } catch (error) {
         console.error('Error loading country data:', error);
-        throw error;
+        return [];
     }
-};
+}

@@ -3,46 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalized Country Recommender</title>
+    <title>Find Your Best Country - MetroMatch</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>Find Your Ideal Country</h1>
-    </header>
-    <main>
-        <section id="user-input">
-            <h2>Tell us your preferences</h2>
-            <form id="preference-form">
-                <label for="education">Education Quality:</label>
-                <select id="education" name="education">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-                
-                <label for="cost">Living Costs:</label>
-                <select id="cost" name="cost">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-                
-                <label for="jobs">Job Opportunities:</label>
-                <select id="jobs" name="jobs">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-                
-                <button type="submit">Get Recommendations</button>
-            </form>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <header class="hero-header">
+            <div class="hero-content">
+                <h1>Find the country that fits your life</h1>
+                <p>Answer a few questions about your lifestyle, priorities, and goals. We'll rank the best countries for you.</p>
+                <button class="btn btn-primary btn-large" id="start-quiz-btn">Find your country</button>
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="container">
+                <h2>How it works</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Quick quiz</h3>
+                        <p>A short set of questions about what matters to you.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Personalized rank</h3>
+                        <p>Countries scored and ordered to match your criteria.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Decide with clarity</h3>
+                        <p>Use the list to explore, compare, and choose your next country.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="recommendations">
-            <h2>Recommended Countries</h2>
-            <div id="country-list"></div>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+
+        <footer class="footer">
+            <p>MetroMatch — rank the best countries to live in for you.</p>
+        </footer>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page">
+        <header class="quiz-header">
+            <div class="container">
+                <h1>Find Your Perfect Country</h1>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="progress-text"><span id="current-question">1</span> / <span id="total-questions">6</span></p>
+            </div>
+        </header>
+
+        <main class="quiz-main">
+            <div class="container">
+                <div id="quiz-container">
+                    <div id="question-container" class="question-container">
+                        <h2 id="question-text"></h2>
+                        <div id="options-container" class="options-container"></div>
+                    </div>
+
+                    <div class="quiz-buttons">
+                        <button class="btn btn-secondary" id="prev-btn" style="display: none;">Previous</button>
+                        <button class="btn btn-primary" id="next-btn" style="display: none;">Next</button>
+                        <button class="btn btn-primary" id="finish-btn" style="display: none;">See Results</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="page">
+        <header class="results-header">
+            <div class="container">
+                <h1>Your Recommended Countries</h1>
+            </div>
+        </header>
+
+        <main class="results-main">
+            <div class="container">
+                <div id="results-container"></div>
+                <button class="btn btn-primary" id="retake-quiz-btn">Retake Quiz</button>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
